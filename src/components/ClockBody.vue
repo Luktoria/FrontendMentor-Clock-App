@@ -72,8 +72,8 @@ export default {
             error: null,
             abbreviation: "",
             currentTime: "",
-            country: "HU",
-            city: "BUDAPEST",
+            country: "",
+            city: "",
             timezone: "",
             dayOfTheWeek: "",
             dayOfTheYear: "",
@@ -145,8 +145,6 @@ export default {
             } else {
                 this.morning = false;
             }
-
-            console.log(this.morning);
         },
 
         showDetails() {
