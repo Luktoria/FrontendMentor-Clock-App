@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](../clock-app/src/assets/assets/Screenshot%202023-11-20%20at%2013-39-31%20Frontend%20Mentor%20Clock%20app%20challenge.png)
+![](./clock-app/src/assets/assets/Screenshot%202023-11-20%20at%2013-39-31%20Frontend%20Mentor%20Clock%20app%20challenge.png)
 
 
 
