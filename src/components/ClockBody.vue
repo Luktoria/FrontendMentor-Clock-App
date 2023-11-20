@@ -116,7 +116,7 @@ export default {
         async getTimeIP() {
             this.pageIsLoading = true;
             try {
-            await axios.get('http://worldtimeapi.org/api/ip')
+            await axios.get('https://worldtimeapi.org/api/ip')
                 .then((response) => {
                     this.abbreviation = response.data.abbreviation
                     this.currentTime = response.data.datetime.slice(11, 16);
