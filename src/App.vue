@@ -128,7 +128,7 @@ h6{
     }
 
     h2{
-        font-size: 20px;
+        font-size: 18px;
         line-height: 22px;
         text-align: right;
         margin: 0
@@ -145,6 +145,7 @@ h6{
     h6{
         font-size: 10px;
         font-weight: 500;
+        margin: 12px 0;
 
     }
 }
