@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Luktoria/FrontendMentor-Clock-App)
-- Live Site URL: [Add live site URL here](https://frontend-mentor-clock-app.web.app/)
+- Solution URL: [Clock-app code](https://github.com/Luktoria/FrontendMentor-Clock-App)
+- Live Site URL: [Clock-app-website](https://frontend-mentor-clock-app.web.app/)
 
 ## My process
 
