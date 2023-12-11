@@ -51,22 +51,7 @@
                 </div>
             </div>
         </div>
-        <!-- <div id="details" v-if="details" :class="morning? 'morning-details' : 'evening-details'">
 
-            <div class="timezone-details">
-                <h6>Current Timezone</h6>
-                <h2> {{ timezone }}</h2>
-                <h6>Day of the Year</h6>
-                <h2> {{ dayOfTheYear }}</h2>
-            </div>
-
-            <div class="week-details">
-                <h6>Day of the week</h6>
-                <h2> {{ dayOfTheWeek }}</h2>
-                <h6>Week number</h6>
-                <h2> {{ weekNumber }}</h2>
-            </div>
-        </div> -->
 
 
     </div>
@@ -365,12 +350,12 @@ h1 {
 
     .morningDiv {
         background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.295)), url('../assets/assets/tablet/bg-image-daytime.jpg');
-        height: 1024px;
+        height: 1370px;
     }
 
     .eveningDiv {
         background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.295)), url(../assets/assets/tablet/bg-image-nighttime.jpg);
-        height: 1024px;
+        height: 1370px;
     }
 
     #details {
@@ -389,12 +374,16 @@ h1 {
 
     .morningDiv {
         background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.295)), url('../assets/assets/mobile/bg-image-daytime.jpg');
-        max-height: 900px;
+        max-height: 920px;
     }
 
     .eveningDiv {
         background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.295)), url(../assets/assets/mobile/bg-image-nighttime.jpg);
-        max-height: 900px;
+        max-height: 920px;
+    }
+
+    .container {
+        height: auto;
     }
 
     #details {
