@@ -213,7 +213,6 @@ export default {
 
 </script>
 
-
 <style scoped>
 .morningDiv {
     background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.295)), url('../assets/assets/desktop/bg-image-daytime.jpg');
@@ -316,13 +315,17 @@ h1 {
     .quote-and-clock {
         padding: 1% 10% 3% 10%;
     }
+
+    #details{
+      height: 320px;
+    }
     .container {
-        height: 350px;
+        height: 320px;
     }
     
     .morningDiv,
     .eveningDiv{
-        height: 800px;
+        height: 850px;
     }
 
 }
@@ -359,7 +362,6 @@ h1 {
     }
 
     #details {
-        padding: 5% 5% 2% 5%;
         grid-column-gap: 25px;
     }
 
