@@ -14,9 +14,6 @@
 
                     <greeting-body :beforenoon=this.beforenoon :afternoon=this.afternoon :evening=this.evening>
                     </greeting-body>
-
-
-
                     <h1> {{ currentTime }}</h1>
                     <span id="abbreviation"> {{ abbreviation }}</span>
                     <h3> {{ 'IN ' + city + ', ' + country }}</h3>
@@ -32,7 +29,7 @@
         </div>
 
 
-        <div class="container" v-if="details">
+     <!-- <div class="container" v-if="details">
             <div id="details" v-if="details" :class="morning ? 'morning-details' : 'evening-details'">
 
 
@@ -50,9 +47,29 @@
                     <h2> {{ weekNumber }}</h2>
                 </div>
             </div>
+        </div> -->  
+ <transition mode="out-in">
+         <div class="container" v-if="details">
+        
+            <div id="details" v-if="details" :class="morning ? 'morning-details' : 'evening-details'">
+                <div class="timezone-details">
+                    <h6>Current Timezone</h6>
+                    <h2> {{ timezone }}</h2>
+                    <h6>Day of the Year</h6>
+                    <h2> {{ dayOfTheYear }}</h2>
+                </div>
+
+                <div class="week-details">
+                    <h6>Day of the week</h6>
+                    <h2> {{ dayOfTheWeek }}</h2>
+                    <h6>Week number</h6>
+                    <h2> {{ weekNumber }}</h2>
+                </div>
+            </div>
+           
         </div>
 
-
+ </transition>
 
     </div>
 </template>
@@ -93,12 +110,6 @@ export default {
             evening: "",
         }
     },
-
-    computed: {
-
-
-    },
-
 
     methods: {
         async getData() {
@@ -142,8 +153,6 @@ export default {
 
         },
 
-
-
         checkMorning() {
             const time = this.currentTime;
             const timeInNumber = parseInt(time, 10);
@@ -186,8 +195,6 @@ export default {
 
     },
 
-
-
     async created() {
         await this.getData();
         await this.getTimeIP();
@@ -196,19 +203,13 @@ export default {
     },
 
     mounted() {
-        window.setInterval(() => {
-            this.getTimeIP();
-            this.checkMorning();
-            this.checkGreeting();
-        }, 60000)
+        // window.setInterval(() => {
+        //     this.getTimeIP();
+        //     this.checkMorning();
+        //     this.checkGreeting();
+        // }, 60000)
     }
-
-
-
 }
-
-
-
 
 
 </script>
@@ -265,24 +266,52 @@ h1 {
 
 }
 
+.v-enter-from {
+  opacity: 0;
+   transform: translateY(100px);
+}
+
+.v-enter-active{
+  transition: all 0.5s ease-in;
+}
+
+.v-enter-to,
+.v-leave-from {
+  opacity: 1;
+ 
+}
+.v-leave-from {
+  opacity: 1;
+  transform: translateY(-150px);
+}
+
+.v-leave-active{
+   transition: all 0.4s ease-out;
+}
+
+.v-leave-to {
+  opacity: 0;
+}
+
+
+
 .container {
     width: 100%;
     position: fixed;
-    bottom: -100%;
-    opacity: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    /* bottom: -100%; */
+    /* left: 50%; */
+    /* transform: translateX(-50%);  */
     border-radius: 10px;
-    animation: smooth-appear 1s ease forwards;
+    /* animation: smooth-appear 1s ease forwards;  */
     backdrop-filter: blur(8px);
 }
 
-@keyframes smooth-appear {
+/* @keyframes smooth-appear {
     to {
         bottom: 20px;
         opacity: 1;
     }
-}
+} */
 
 #details {
     height: 400px;
