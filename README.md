@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Clock-app code](https://github.com/Luktoria/FrontendMentor-Clock-App)
-- Live Site URL: [Clock-app-website](https://frontend-mentor-clock-app.web.app/)
+- Live Site URL: [Clock-app-website](https://frontend-mentor-clock-app-teal.vercel.app)
 
 ## My process
 
