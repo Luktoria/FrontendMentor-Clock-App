@@ -75,10 +75,10 @@ img:hover{
     cursor: pointer;
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1500px) {
 
     section{
-        height: 300px;
+        height: 250px;
         width: 60%
     }
 

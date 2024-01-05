@@ -13,7 +13,6 @@ import ClockBody from './components/ClockBody.vue';
 export default {
     components: {
         ClockBody
-     
     }
 }
 
@@ -74,7 +73,7 @@ export default {
        text-transform: uppercase;
    }
    
-   @media screen and (max-width: 1400px) {
+   @media screen and (max-width: 1500px) {
        h1{
            font-size: 160px;
        }

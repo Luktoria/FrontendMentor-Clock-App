@@ -29,25 +29,6 @@
         </div>
 
 
-     <!-- <div class="container" v-if="details">
-            <div id="details" v-if="details" :class="morning ? 'morning-details' : 'evening-details'">
-
-
-                <div class="timezone-details">
-                    <h6>Current Timezone</h6>
-                    <h2> {{ timezone }}</h2>
-                    <h6>Day of the Year</h6>
-                    <h2> {{ dayOfTheYear }}</h2>
-                </div>
-
-                <div class="week-details">
-                    <h6>Day of the week</h6>
-                    <h2> {{ dayOfTheWeek }}</h2>
-                    <h6>Week number</h6>
-                    <h2> {{ weekNumber }}</h2>
-                </div>
-            </div>
-        </div> -->  
  <transition mode="out-in">
          <div class="container" v-if="details">
         
@@ -298,20 +279,11 @@ h1 {
 .container {
     width: 100%;
     position: fixed;
-    /* bottom: -100%; */
-    /* left: 50%; */
-    /* transform: translateX(-50%);  */
     border-radius: 10px;
-    /* animation: smooth-appear 1s ease forwards;  */
     backdrop-filter: blur(8px);
 }
 
-/* @keyframes smooth-appear {
-    to {
-        bottom: 20px;
-        opacity: 1;
-    }
-} */
+
 
 #details {
     height: 400px;
@@ -339,8 +311,33 @@ h1 {
     background-color: rgba(12, 12, 12, 0.85);
 }
 
+/* width: 1482 height: 698  */
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1550px) {
+
+    .morningDiv,
+    .eveningDiv{
+        height: 800px;
+    }
+
+    h1{
+        font-size: 150px;
+    }
+
+    .quote-and-clock {
+        padding: 0 10% 1% 10%;
+    }
+    
+    #details{
+        height: 320px;
+    }
+    .container {
+        height: 320px;
+    }
+}
+
+
+@media screen and (max-width: 1350px) {
     .quote-and-clock {
         padding: 1% 10% 3% 10%;
     }
